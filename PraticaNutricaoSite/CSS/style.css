@@ -1,0 +1,247 @@
+/*PraticaNutricao - site @author ThiagoTJ
+*
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+/*Menu do site*/
+nav{
+    z-index: 99;
+    width: 100%;/* Responsivo */
+    text-align: right; 
+}
+nav ul {
+    list-style: none; /*Tira bullets*/
+    padding: 5px;
+    background-color: chocolate;
+    overflow: hidden; /*Enxergar o background e completa a largura total com o background*/
+}
+nav ul li {
+    display: inline-block;  
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: sans-serif;
+    
+}
+nav ul li a{
+    text-decoration: none; /*retira a cor do link*/
+    color: #ffffff;
+    padding: 7px;
+    display: block; /*Transforma em blocos clicaveis*/
+    float: left;
+}
+nav ul li a:hover{
+    background-color: sienna;
+    transition: all 0.5s;
+}
+.Tj{
+    text-align: left;
+    float: left;
+}
+/*Colocar o logo no menu*/
+#logo{
+    float:left; 
+}
+.Mobile{
+    display: none;
+}
+
+/* classe manipulada pelo JS/JQUERY */
+.Fixar{
+    position: fixed;
+    top: 0;
+}
+/*.............................................................................................................*/
+/*Colocar a Imagem de fundo*/
+.Layout{
+    background-image: url('../banner/fundo.jpg');
+    height: 350px;
+    background-size: cover;/*Mantem o maior tamanho sem repetição*/
+    padding-top: 100px;/*Centralizar a imagem de background*/
+    background-position: center;
+    background-attachment: fixed; /*Fixar background*/
+}
+/*.Layout p{
+    text-align: center;
+    color: #000000;
+    font-size: 2.5em;
+}*/
+/*Colocar a cor solida de fundo*/
+.Modulo{
+    background-color: chocolate;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.Modulo h2{
+    background-color: chocolate;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.5em;
+}
+/*Colocar a fonte cor paragrafo*/
+.Destaque{
+    padding: 50px 0px 150px 0px;
+    max-width: 1000px;/*Espaçamento interno*/
+    margin: 0 auto;/*Centralizar*/
+    overflow: hidden;
+}
+.Title{
+    font-size: 2vw;
+    font-family: 'Oswald', sans-serif;
+}
+#h1{
+margin-top: 30px;
+font-family: 'Oswald', sans-serif;
+}
+#h3{
+    margin-top: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+/*.............................................................................................................*/
+/*Pagina Home*/
+img {
+    max-width: 100%;
+}
+/*.............................................................................................................*/
+/*.............................................................................................................*/
+/*Sobre*/
+/*.............................................................................................................*/
+/*Contato*/
+#contato{
+    padding-top: 50px;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+#contato h1{
+    margin-bottom: 30px;
+}
+#contato input[type=text]{
+    width: 100%;
+    border: 1px solid darkgray;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px; /*arrendondar os cantos*/
+}
+#contato textarea{
+    width: 100%;
+    border: 1px solid darkgray;
+    padding: 10px 10px 40px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px; /*arrendondar os cantos*/
+    resize: none;
+}
+#contato input[type=submit]{
+    background-color: darkgray;
+    border: 1px solid darkgray;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px 10px 25px;
+}
+.map-responsive iframe{
+    
+    height:50%;
+    width:50%;
+    position:absolute;
+}
+.Top{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+  
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: chocolate;
+    font-size: 22px;
+}
+/*.............................................................................................................*/
+/*Rodapé*/
+footer{
+    background-color: chocolate;
+    color: #fff;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    font-size: 0.75em; /**** Responsividade ver tabela conversão ****/ 
+}
+/*.............................................................................................................*/
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56%;
+    position:relative;
+    height:0;
+    
+}
+@media screen and (max-width: 480px){
+    
+/*************** header ****************/
+#main{
+    margin: 0;
+}
+/***************** Menu *****************/
+.Mobile{
+    display: block;
+    background-color: #fff;
+    color: #2b28d3bd;
+    text-decoration: none;
+    padding: 15px;
+}
+nav a{
+    text-align: left;
+    font-size: 5vw;
+}
+nav{
+    z-index: 3;
+}
+nav >ul > li{
+   float: none;
+   width: 100%;
+}
+
+nav ul{
+    display: none;
+}
+/*** melhorando UX (User eXperience) ***/
+nav ul li a{
+   text-align: left;
+}
+
+nav li ul li{
+   background-color: #2e3335;
+   padding-left: 40px;
+}
+
+nav li ul li a{
+    background-color: chocolate;
+    padding-left: 40px;
+}
+/***********Banner*******************/
+#banner{
+   width: 100%
+}
+#banner h1{
+   font-size: 1.5em;
+}
+.Title{
+    font-size: 5vw;
+}
+.Destaque{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+}
